@@ -9,11 +9,18 @@ class StringConstant{
   static const String profile='profile@gmail.com';
   static const String password ='password';
   static const String enterPassword ='Enter your password';
-
+  static const String tellUsAboutABit ='Tell us  a bit about you';
   static const String forgotYourPassword ='forgot your password?';
   static const String orWith ='or with';
   static const String signInWithGoogle ='sign in with Google';
   static const String signInWithFacebook ='sign in with Facebook';
   static const String donTHaveAccount ='Dont have an account?';
   static const String signUp='sign up';
+  static const String name='Name';
+  static const String dateOfBirth='Date of birth';
+  static const String gender='Gender';
+  static const String male='Male';
+  static const String female='Female';
+  static const String nextStep='NEXT STEP';
+
 }

@@ -12,6 +12,9 @@ class AppColors {
   static const Color orWithStarDust = Color(0xFF9B9B9B);
   static const Color blue = Color(0xFF5EE6FF);
   static const Color forgotPass = Color(0xFF656F80);
+  static const Color arrow = Color(0xFFAAB2B7);
+  static const Color orange = Color(0xFFFF7A00);
+  static const Color person = Color(0xFF656F80);
 
 
 }

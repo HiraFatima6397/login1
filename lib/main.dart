@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login1/modules/login/sign_in.dart';
+import 'package:login1/modules/login/sign_up_about.dart';
 
 import 'modules/login/on_boarding.dart';
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: const OnBoarding(),
+      home: const SignInAbout(),
     );
   }
 }
