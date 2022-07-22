@@ -58,12 +58,8 @@ class _OnBoardingState extends State<OnBoarding> {
           SizedBox(
             height: 28,
           ),
-          InkWell(
-            onTap: () {
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (context) => SignIn()));
-            },
-            child: Container(
+
+    Container(
               height: 58,
               width: 311,
               child: Center(
@@ -87,13 +83,18 @@ class _OnBoardingState extends State<OnBoarding> {
                 color: AppColors.createAccountCantaloupe,
               ),
             ),
-          ),
           SizedBox(
             height: 17,
           ),
-          Text(
-            StringConstant.signIn,
-            style: AppStyles.regularText(color: AppColors.signInBlueJay),
+          InkWell(onTap: (){
+
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => SignIn()));
+          },
+            child: Text(
+              StringConstant.signIn,
+              style: AppStyles.regularText(color: AppColors.signInBlueJay),
+            ),
           ),
         ],
       ),
