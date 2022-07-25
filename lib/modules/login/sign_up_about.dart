@@ -4,6 +4,7 @@ import 'package:login1/constant/icons.dart';
 import 'package:login1/constant/images.dart';
 import 'package:login1/constant/string.dart';
 import 'package:login1/constant/style.dart';
+import 'package:login1/modules/login/add_hobbies.dart';
 
 class SignInAbout extends StatefulWidget {
   const SignInAbout({Key? key}) : super(key: key);
@@ -181,25 +182,31 @@ class _SignInAboutState extends State<SignInAbout> {
                   SizedBox(
                     height: 85,
                   ),
-                  Container(
-                    height: 60,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(40),
-                      border: Border.all(
-                        color: AppColors.orange,
-                        width: 2,
+                  InkWell(
+                    onTap: (){
+                      Navigator.of(context)
+                          .push(MaterialPageRoute(builder: (context) => AddHobbies()));
+                    },
+                    child: Container(
+                      height: 60,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(40),
+                        border: Border.all(
+                          color: AppColors.orange,
+                          width: 2,
+                        ),
                       ),
+                      child: Center(
+                          child: Text(StringConstant.nextStep,
+                              style: AppStyles.regularText(
+                                  color: AppColors.orange,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600))),
                     ),
-                    child: Center(
-                        child: Text(StringConstant.nextStep,
-                            style: AppStyles.regularText(
-                                color: AppColors.orange,
-                                fontSize: 16,
-                                fontWeight: FontWeight.w600))),
                   )
                 ],
               ),
-            ),
+         ),
           ),
         ),
       ),

@@ -6,6 +6,7 @@ import 'package:login1/constant/string.dart';
 import 'package:login1/constant/style.dart';
 import 'package:dotted_line/dotted_line.dart';
 import 'package:login1/modules/login/on_boarding.dart';
+import 'package:login1/modules/login/sign_up_about.dart';
 
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
@@ -105,30 +106,35 @@ class _SignInState extends State<SignIn> {
                 SizedBox(
                   height: 24,
                 ),
-                Container(
-                  height: 58,
-                  child: Center(
-                      child: Text(
-                    StringConstant.signIn,
-                    style: AppStyles.regularText(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w600,
-                        color: AppColors.white),
-                  )),
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(colors: [
-                      AppColors.createArtyClickOrange,
-                      AppColors.createAccountCantaloupe
-                    ], end: Alignment.topLeft, begin: Alignment.topRight),
-                    boxShadow: [
-                      BoxShadow(
-                          color: AppColors.createAccountCantaloupe,
-                          blurRadius: 12,
-                          spreadRadius: 1,
-                          offset: Offset(1, 3))
-                    ],
-                    borderRadius: BorderRadius.circular(40),
-                    color: AppColors.createAccountCantaloupe,
+                InkWell(onTap: (){
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => SignInAbout()));
+                },
+                  child: Container(
+                    height: 58,
+                    child: Center(
+                        child: Text(
+                      StringConstant.signIn,
+                      style: AppStyles.regularText(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w600,
+                          color: AppColors.white),
+                    )),
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(colors: [
+                        AppColors.createArtyClickOrange,
+                        AppColors.createAccountCantaloupe
+                      ], end: Alignment.topLeft, begin: Alignment.topRight),
+                      boxShadow: [
+                        BoxShadow(
+                            color: AppColors.createAccountCantaloupe,
+                            blurRadius: 12,
+                            spreadRadius: 1,
+                            offset: Offset(1, 3))
+                      ],
+                      borderRadius: BorderRadius.circular(40),
+                      color: AppColors.createAccountCantaloupe,
+                    ),
                   ),
                 ),
                 SizedBox(

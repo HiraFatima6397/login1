@@ -15,6 +15,6 @@ class AppColors {
   static const Color arrow = Color(0xFFAAB2B7);
   static const Color orange = Color(0xFFFF7A00);
   static const Color person = Color(0xFF656F80);
-
-
+  static const Color container = Color(0xFF94BDFF);
+  static const Color addHobby = Color(0xFF284A7E);
 }
