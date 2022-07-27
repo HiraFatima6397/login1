@@ -17,4 +17,7 @@ class AppColors {
   static const Color person = Color(0xFF656F80);
   static const Color container = Color(0xFF94BDFF);
   static const Color addHobby = Color(0xFF284A7E);
+  static const Color red= Color(0xFF58FFC3);
+  static const Color green = Color(0xFFFF5858);
+
 }

@@ -6,6 +6,9 @@ class AppIcons {
   static const search =Icons.search;
   static const cross= Icons.cancel_outlined;
   static const edit =Icons.edit_rounded;
+  static const add =Icons.add;
+  static const star=Icons.star;
+  static const clear=Icons.clear;
 
 
 }

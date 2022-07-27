@@ -75,43 +75,100 @@ class _NextStepState extends State<NextStep> {
               )),
           SizedBox(
             height: 24,
-          ),
-              Row(
-                  children: [
-                    Container(
-                      height: 32,
-                      width: 152,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8),
-                          color: AppColors.blue),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(
-                            vertical: 4, horizontal: 9),
-                        child: Text(StringConstant.badminton,
-                            style: TextStyle(
-                                fontWeight: FontWeight.w600,
-                                fontSize: 16)
-                        ),
+          ),Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 9),
+            child: Row(
+                children: [
+                  Container(
+                    height: 32,
+                    width: 152,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                        color: AppColors.blue),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 4, horizontal: 9),
+                      child: Row(
+                        children: [
+                          Text(StringConstant.badminton,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 16)
+                          ),
+                          SizedBox(width: 22,),
+                          Icon(AppIcons.cross)
+                        ],
+                      ),
 
+                    ),
+                  ),
+
+                  SizedBox( width: 7,),
+                  Container(
+                    height: 32,
+                    width: 152,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                        color: AppColors.blue),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 4, horizontal: 9),
+                      child: Row(
+                        children: [
+                          Text(StringConstant.photography,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 16)),
+                          SizedBox(width: 6,),
+                          Icon(AppIcons.cross)
+                        ],
                       ),
                     ),
-                    SizedBox( width: 7,),
-                    Container(
-                      height: 32,
-                      width: 152,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8),
-                          color: AppColors.blue),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(
-                            vertical: 4, horizontal: 9),
-                        child: Text(StringConstant.photography,
-                            style: TextStyle(
-                                fontWeight: FontWeight.w600,
-                                fontSize: 16)),
-                      ),
-                    ),
-    ])
+                  ),
+    ]),
+          ),
+          SizedBox(height: 16,),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 9),
+            child: Container(
+              height: 32,
+              width: 152,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  color: AppColors.blue),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(
+                    vertical: 4, horizontal: 9),
+                child: Row(
+                  children: [
+                    Text(StringConstant.photography,
+                        style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            fontSize: 16)),
+                    SizedBox(width: 6,),
+                    Icon(AppIcons.cross)
+                  ],
+                ),
+              ),
+            ),
+          ),
+          SizedBox(height: 295,),
+          Container(
+            height: 60,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(40),
+              border: Border.all(
+                color: AppColors.orange,
+                width: 2,
+              ),
+            ),
+            child: Center(
+                child: Text(StringConstant.nextStep,
+                    style: AppStyles.regularText(
+                        color: AppColors.orange,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600))),
+          )
          ] )
       )
           )));

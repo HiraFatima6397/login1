@@ -8,5 +8,10 @@ class AppImages {
   static const like = '$base/Vector.png';
   static const location = '$base/Vector (1).png';
   static const message = '$base/Vector (2).png';
+  static const man = '$base/Frame 14021.png';
+  static const blank = '$base/Frame 14022.png';
+  static const pic1 = '$base/Frame 14022 (1).png';
+
+
 
 }

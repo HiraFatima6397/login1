@@ -57,6 +57,10 @@ class StringConstant{
   static const String youHaveChosenTwoHobbies = 'you have chosen two hobbies';
   static const String youHaveThreeHobby = 'You have three hobby';
   static const String iLoveLandscape = 'I love landscape/city photography. Would be great to meet someone to explore London and shoot together.';
+  static const String addPhotos = 'Add Photos';
+  static const String setPhoto = 'You can set this photo as the main one';
+  static const String mainPhoto = 'main photo';
+  static const String delete = 'Delete';
 
 
 }
