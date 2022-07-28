@@ -94,31 +94,35 @@ class _AddPhotosState extends State<AddPhotos> {
                     SizedBox(
                       height: 88,
                     ),
-                    Container(
-                      height: 58,
-                      width: double.infinity,
-                      child: Center(
-                          child: Text(
-                        StringConstant.save,
-                        style: AppStyles.regularText(
-                            color: AppColors.white,
-                            fontWeight: FontWeight.w600,
-                            fontSize: 20),
-                      )),
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(colors: [
-                          AppColors.createArtyClickOrange,
-                          AppColors.createAccountCantaloupe
-                        ], end: Alignment.topLeft, begin: Alignment.topRight),
-                        boxShadow: [
-                          BoxShadow(
-                              color: AppColors.createAccountCantaloupe,
-                              blurRadius: 12,
-                              spreadRadius: 1,
-                              offset: Offset(1, 3))
-                        ],
-                        borderRadius: BorderRadius.circular(40),
-                        color: AppColors.createAccountCantaloupe,
+                    InkWell(onTap: (){
+                      Navigator.of(context).pushNamed('/Photo');
+                    },
+                      child: Container(
+                        height: 58,
+                        width: double.infinity,
+                        child: Center(
+                            child: Text(
+                          StringConstant.save,
+                          style: AppStyles.regularText(
+                              color: AppColors.white,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 20),
+                        )),
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(colors: [
+                            AppColors.createArtyClickOrange,
+                            AppColors.createAccountCantaloupe
+                          ], end: Alignment.topLeft, begin: Alignment.topRight),
+                          boxShadow: [
+                            BoxShadow(
+                                color: AppColors.createAccountCantaloupe,
+                                blurRadius: 12,
+                                spreadRadius: 1,
+                                offset: Offset(1, 3))
+                          ],
+                          borderRadius: BorderRadius.circular(40),
+                          color: AppColors.createAccountCantaloupe,
+                        ),
                       ),
                     ),
                   ],

@@ -144,7 +144,7 @@ class _AppHobbies2State extends State<AppHobbies2> {
                 SizedBox(height: 100),
                 InkWell(onTap: (){
                   Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => AddHobbies3()));
+                      .pushNamed('/AddHobbies3');
                 },
                   child: Container(
                     height: 58,

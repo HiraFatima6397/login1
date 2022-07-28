@@ -202,7 +202,7 @@ class _AddNewHobbyState extends State<AddNewHobby> {
 
                         InkWell(onTap: (){
                           Navigator.of(context)
-                              .push(MaterialPageRoute(builder: (context) => NextStep()));
+                              .pushNamed('/NextStep');
                         },
                           child: Container(
                             height: 60,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'route/route.dart'as route;
 import 'package:login1/modules/login/add_hobbies.dart';
 import 'package:login1/modules/login/add_hobbies3.dart';
 import 'package:login1/modules/login/add_hobbies_surfing.dart';
@@ -29,7 +30,8 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: const Photo(),
+      onGenerateRoute: route.Router.generateRoute,
+      initialRoute: '/',
     );
   }
 }

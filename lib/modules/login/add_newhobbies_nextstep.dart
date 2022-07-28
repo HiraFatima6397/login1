@@ -153,21 +153,25 @@ class _NextStepState extends State<NextStep> {
             ),
           ),
           SizedBox(height: 295,),
-          Container(
-            height: 60,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(40),
-              border: Border.all(
-                color: AppColors.orange,
-                width: 2,
+          InkWell(onTap: (){
+            Navigator.of(context).pushNamed('/AddPhotos');
+          },
+            child: Container(
+              height: 60,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(40),
+                border: Border.all(
+                  color: AppColors.orange,
+                  width: 2,
+                ),
               ),
+              child: Center(
+                  child: Text(StringConstant.nextStep,
+                      style: AppStyles.regularText(
+                          color: AppColors.orange,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600))),
             ),
-            child: Center(
-                child: Text(StringConstant.nextStep,
-                    style: AppStyles.regularText(
-                        color: AppColors.orange,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600))),
           )
          ] )
       )

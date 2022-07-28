@@ -107,8 +107,7 @@ class _SignInState extends State<SignIn> {
                   height: 24,
                 ),
                 InkWell(onTap: (){
-                  Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => SignInAbout()));
+                  Navigator.of(context).pushNamed('/SignInAbout');
                 },
                   child: Container(
                     height: 58,

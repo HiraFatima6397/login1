@@ -78,13 +78,17 @@ class _AddHobbiesState extends State<AddHobbies> {
                 height: 39.05,
               ),
               Center(
-                  child: Text(
+                  child: InkWell(onTap: (){
+                    Navigator.of(context).pushNamed('/AppHobbies2');
+                  },
+                    child: Text(
                 StringConstant.addHobbies,
                 style: AppStyles.regularText(
-                    fontSize: 28,
-                    fontWeight: FontWeight.w500,
-                    color: AppColors.whatEverThunder),
-              )),
+                      fontSize: 28,
+                      fontWeight: FontWeight.w500,
+                      color: AppColors.whatEverThunder),
+              ),
+                  )),
               SizedBox(
                 height: 21,
               ),

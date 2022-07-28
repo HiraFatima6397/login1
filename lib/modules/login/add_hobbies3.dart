@@ -116,21 +116,25 @@ class _AddHobbies3State extends State<AddHobbies3> {
                             fontWeight: FontWeight.w400, fontSize: 16),
                       ),
                       SizedBox(height: 155,),
-                      Container(
-                        height: 60,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(40),
-                          border: Border.all(
-                            color: AppColors.addHobby,
-                            width: 2,
+                      InkWell(onTap: (){
+                        Navigator.of(context).pushNamed('/AddHobbiesSurfing');
+                      },
+                        child: Container(
+                          height: 60,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(40),
+                            border: Border.all(
+                              color: AppColors.addHobby,
+                              width: 2,
+                            ),
                           ),
+                          child: Center(
+                              child: Text(StringConstant.addNewHobby,
+                                  style: AppStyles.regularText(
+                                      color: AppColors.addHobby,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w600))),
                         ),
-                        child: Center(
-                            child: Text(StringConstant.addNewHobby,
-                                style: AppStyles.regularText(
-                                    color: AppColors.addHobby,
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600))),
                       ),
                       SizedBox(height: 24,),
                       Container(

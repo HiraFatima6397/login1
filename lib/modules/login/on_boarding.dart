@@ -89,8 +89,7 @@ class _OnBoardingState extends State<OnBoarding> {
           InkWell(onTap: (){
 
               Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (context) => SignIn()));
-          },
+                  .pushNamed('/SignIn');},
             child: Text(
               StringConstant.signIn,
               style: AppStyles.regularText(color: AppColors.signInBlueJay),

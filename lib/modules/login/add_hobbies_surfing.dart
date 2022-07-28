@@ -200,7 +200,7 @@ class _AddHobbiesSurfingState extends State<AddHobbiesSurfing> {
                       SizedBox(height: 18,),
                       InkWell(onTap: (){
                         Navigator.of(context)
-                            .push(MaterialPageRoute(builder: (context) => AddNewHobby()));
+                            .pushNamed('/AddNewHobby');
                       },
                         child: Container(
                           height: 50,

@@ -185,7 +185,7 @@ class _SignInAboutState extends State<SignInAbout> {
                   InkWell(
                     onTap: (){
                       Navigator.of(context)
-                          .push(MaterialPageRoute(builder: (context) => AddHobbies()));
+                          .pushNamed('/AddHobbies');
                     },
                     child: Container(
                       height: 60,
