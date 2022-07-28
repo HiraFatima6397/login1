@@ -61,6 +61,10 @@ class StringConstant{
   static const String setPhoto = 'You can set this photo as the main one';
   static const String mainPhoto = 'main photo';
   static const String delete = 'Delete';
+  static const String myProfile = 'My Profile';
+  static const String jamesClark = 'james Clark';
+
+
 
 
 }

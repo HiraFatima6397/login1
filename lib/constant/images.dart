@@ -11,6 +11,10 @@ class AppImages {
   static const man = '$base/Frame 14021.png';
   static const blank = '$base/Frame 14022.png';
   static const pic1 = '$base/Frame 14022 (1).png';
+  static const pic2 = '$base/Frame 14023.png';
+  static const profileBackground = '$base/Ellipse 1788.png';
+  static const man2 = '$base/Ellipse 1789.png';
+
 
 
 

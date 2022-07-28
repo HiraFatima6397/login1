@@ -14,7 +14,7 @@ class AddPhotos extends StatefulWidget {
 
 class _AddPhotosState extends State<AddPhotos> {
   int _currentIndex = 0;
-  List<String> image = [
+  List<String> items = [
     AppImages.man,
     AppImages.blank,
     AppImages.blank,
@@ -77,24 +77,32 @@ class _AddPhotosState extends State<AddPhotos> {
                       ),
                     ),
                     const SizedBox(
-                      height: 40,
+                      height: 42,
                     ),
                     SizedBox(
-                      height: 300,
-                      child: GridView.count(
-                        scrollDirection: Axis.vertical,
-                        crossAxisCount: 3,
-                        mainAxisSpacing: 8,
-                        crossAxisSpacing: 8,
-                        children: List.generate(image.length, (index) {
-                          return _buildCardViewWidget(image: image[index]);
-                        }),
-                      ),
+                      height: 400,
+                      child: GridView.builder(
+                          gridDelegate:
+                          SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 3,
+                            mainAxisExtent: 150,
+                          ),
+                          itemCount: 6,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              height: 300,
+                              child: Center(
+                                  child: Image.asset(
+                                    items[index],
+                                    fit: BoxFit.cover,
+                                  )),
+                            );
+                          }),
                     ),
                     SizedBox(
-                      height: 88,
+                      height: 10,
                     ),
-                    InkWell(onTap: (){
+                    InkWell(onTap: () {
                       Navigator.of(context).pushNamed('/Photo');
                     },
                       child: Container(
@@ -102,12 +110,12 @@ class _AddPhotosState extends State<AddPhotos> {
                         width: double.infinity,
                         child: Center(
                             child: Text(
-                          StringConstant.save,
-                          style: AppStyles.regularText(
-                              color: AppColors.white,
-                              fontWeight: FontWeight.w600,
-                              fontSize: 20),
-                        )),
+                              StringConstant.save,
+                              style: AppStyles.regularText(
+                                  color: AppColors.white,
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 20),
+                            )),
                         decoration: BoxDecoration(
                           gradient: LinearGradient(colors: [
                             AppColors.createArtyClickOrange,
@@ -127,14 +135,5 @@ class _AddPhotosState extends State<AddPhotos> {
                     ),
                   ],
                 ))));
-  }
-
-  _buildCardViewWidget({required String image}) {
-    return ClipRRect(borderRadius: BorderRadius.circular(8),
-      child: Image.asset(
-        image,
-        fit: BoxFit.fill,alignment: Alignment.center,
-      ),
-    );
   }
 }

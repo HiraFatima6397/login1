@@ -17,8 +17,8 @@ class _PhotoState extends State<Photo> {
   Widget build(BuildContext context) {
     List<String> items = [
       AppImages.man,
-      AppImages.blank,
-      AppImages.blank,
+      AppImages.pic1,
+      AppImages.pic2,
       AppImages.blank,
       AppImages.blank,
       AppImages.blank,
@@ -75,13 +75,14 @@ class _PhotoState extends State<Photo> {
                               color: AppColors.whatEverThunder),
                         ),
                       ),
+                      SizedBox(height: 42,),
                       SizedBox(
-                        height: 400,
+                        height: 300,
                         child: GridView.builder(
                             gridDelegate:
                                 SliverGridDelegateWithFixedCrossAxisCount(
                               crossAxisCount: 3,
-                              mainAxisExtent: 200,
+                              mainAxisExtent: 150,
                             ),
                             itemCount: 6,
                             itemBuilder: (context, index) {
@@ -95,6 +96,7 @@ class _PhotoState extends State<Photo> {
                               );
                             }),
                       ),
+                      SizedBox(height: 96,),
                       Center(
                           child: Text(
                         StringConstant.setPhoto,
@@ -120,14 +122,18 @@ class _PhotoState extends State<Photo> {
                           SizedBox(
                             width: 79,
                           ),
-                          Container(
-                            height: 32,
-                            width: 32,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(50),
-                                color: AppColors.green),
-                            child:
-                                Icon(AppIcons.clear, color: AppColors.white),
+                          InkWell(onTap: (){
+                            Navigator.of(context).pushNamed('/Profile');
+                          },
+                            child: Container(
+                              height: 32,
+                              width: 32,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(50),
+                                  color: AppColors.green),
+                              child:
+                                  Icon(AppIcons.clear, color: AppColors.white),
+                            ),
                           ),
                         ],
                       ),

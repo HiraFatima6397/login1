@@ -10,6 +10,7 @@ import 'package:login1/modules/login/mainphoto_deletephoto.dart';
 import 'package:login1/modules/login/on_boarding.dart';
 import 'package:login1/modules/login/sign_in.dart';
 import 'package:login1/modules/login/sign_up_about.dart';
+import 'package:login1/modules/profile_main.dart';
 
 class Router {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -36,6 +37,9 @@ class Router {
         return MaterialPageRoute(builder: (_) => const AddPhotos());
       case '/Photo':
         return MaterialPageRoute(builder: (_) => const Photo());
+      case '/Profile':
+        return MaterialPageRoute(builder: (_) => const Profile());
+
       default:
         return MaterialPageRoute(
             builder: (_) =>

@@ -9,6 +9,7 @@ class AppIcons {
   static const add =Icons.add;
   static const star=Icons.star;
   static const clear=Icons.clear;
+  static const outline=Icons.apps_outlined;
 
 
 }
