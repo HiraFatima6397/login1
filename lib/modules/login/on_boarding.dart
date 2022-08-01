@@ -58,38 +58,37 @@ class _OnBoardingState extends State<OnBoarding> {
           SizedBox(
             height: 28,
           ),
-
-    Container(
-              height: 58,
-              width: 311,
-              child: Center(
-                  child: Text(
-                StringConstant.createAccount,
-                style: AppStyles.regularText(color: AppColors.white),
-              )),
-              decoration: BoxDecoration(
-                gradient: LinearGradient(colors: [
-                  AppColors.createArtyClickOrange,
-                  AppColors.createAccountCantaloupe
-                ], end: Alignment.topLeft, begin: Alignment.topRight),
-                boxShadow: [
-                  BoxShadow(
-                      color: AppColors.createAccountCantaloupe,
-                      blurRadius: 12,
-                      spreadRadius: 1,
-                      offset: Offset(1, 3))
-                ],
-                borderRadius: BorderRadius.circular(40),
-                color: AppColors.createAccountCantaloupe,
-              ),
+          Container(
+            height: 58,
+            width: 311,
+            child: Center(
+                child: Text(
+              StringConstant.createAccount,
+              style: AppStyles.regularText(color: AppColors.white),
+            )),
+            decoration: BoxDecoration(
+              gradient: LinearGradient(colors: [
+                AppColors.createArtyClickOrange,
+                AppColors.createAccountCantaloupe
+              ], end: Alignment.topLeft, begin: Alignment.topRight),
+              boxShadow: [
+                BoxShadow(
+                    color: AppColors.createAccountCantaloupe,
+                    blurRadius: 12,
+                    spreadRadius: 1,
+                    offset: Offset(1, 3))
+              ],
+              borderRadius: BorderRadius.circular(40),
+              color: AppColors.createAccountCantaloupe,
             ),
+          ),
           SizedBox(
             height: 17,
           ),
-          InkWell(onTap: (){
-
-              Navigator.of(context)
-                  .pushNamed('/SignIn');},
+          InkWell(
+            onTap: () {
+              Navigator.of(context).pushNamed('/SignIn');
+            },
             child: Text(
               StringConstant.signIn,
               style: AppStyles.regularText(color: AppColors.signInBlueJay),

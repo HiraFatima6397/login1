@@ -14,6 +14,10 @@ class AppImages {
   static const pic2 = '$base/Frame 14023.png';
   static const profileBackground = '$base/Ellipse 1788.png';
   static const man2 = '$base/Ellipse 1789.png';
+  static const bg = '$base/Ellipse 1788 (1).png';
+  static const explore2 = '$base/Rectangle 2588.png';
+  static const explore = '$base/Screen Shot 2022-08-01 at 6.38.14 PM.png';
+
 
 
 

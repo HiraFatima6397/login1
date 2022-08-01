@@ -14,7 +14,7 @@ class AddHobbies extends StatefulWidget {
 
 class _AddHobbiesState extends State<AddHobbies> {
   int _currentIndex = 0;
-  final List item = [
+  late List item = [
     {'title': 'Astronomy'},
     {'title': 'Birdwatching'},
     {'title': 'Badminton'},
@@ -103,6 +103,7 @@ class _AddHobbiesState extends State<AddHobbies> {
                 height: 8,
               ),
               TextField(
+
                 decoration: InputDecoration(
                     hintText: StringConstant.searchForHobbies,prefixIcon: Icon(AppIcons.search),
                     hintStyle: AppStyles.regularText(

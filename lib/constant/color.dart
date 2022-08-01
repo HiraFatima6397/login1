@@ -19,5 +19,8 @@ class AppColors {
   static const Color addHobby = Color(0xFF284A7E);
   static const Color red= Color(0xFF58FFC3);
   static const Color green = Color(0xFFFF5858);
+  static const Color lightBlue = Color(0xFF5EE6FF);
+  static const Color containerBlue = Color(0xFF5EE6FF);
+
 
 }
