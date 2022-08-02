@@ -14,7 +14,6 @@ class AppIcons {
   static const diamond=Icons.diamond_outlined;
 
   static const camera=Icons.camera_alt;
-
-
+  static const check=Icons.check;
 
 }

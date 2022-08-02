@@ -4,7 +4,6 @@ import 'package:login1/constant/icons.dart';
 import 'package:login1/constant/images.dart';
 import 'package:login1/constant/string.dart';
 import 'package:login1/constant/style.dart';
-import 'package:login1/modules/login/add_hobbies3.dart';
 
 class AppHobbies2 extends StatefulWidget {
   const AppHobbies2({Key? key}) : super(key: key);

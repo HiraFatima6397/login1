@@ -17,6 +17,8 @@ class AppImages {
   static const bg = '$base/Ellipse 1788 (1).png';
   static const explore2 = '$base/Rectangle 2588.png';
   static const explore = '$base/Screen Shot 2022-08-01 at 6.38.14 PM.png';
+  static const direction = '$base/Vector (4).png';
+  static const explore3 = '$base/Rectangle 2588 (1).png';
 
 
 

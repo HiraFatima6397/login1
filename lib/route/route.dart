@@ -1,23 +1,26 @@
  import 'package:flutter/material.dart';
-import 'package:login1/modules/login/add_hobbies.dart';
-import 'package:login1/modules/login/add_hobbies3.dart';
-import 'package:login1/modules/login/add_hobbies_surfing.dart';
-import 'package:login1/modules/login/add_new_hobby.dart';
-import 'package:login1/modules/login/add_newhobbies_nextstep.dart';
+import 'package:login1/modules/add_hobbies/add_hobbies3.dart';
 import 'package:login1/modules/login/add_photos.dart';
-import 'package:login1/modules/login/app_hobbies2.dart';
+import 'package:login1/modules/add_hobbies/app_hobbies2.dart';
 import 'package:login1/modules/login/edit_hobbies.dart';
 import 'package:login1/modules/login/explore.dart';
+import 'package:login1/modules/login/explore_setting.dart';
 import 'package:login1/modules/login/information.dart';
 import 'package:login1/modules/login/log_out.dart';
 import 'package:login1/modules/login/mainphoto_deletephoto.dart';
 import 'package:login1/modules/login/on_boarding.dart';
 import 'package:login1/modules/login/privacy_policy.dart';
 import 'package:login1/modules/login/save_hobbies.dart';
+import 'package:login1/modules/login/screen.dart';
 import 'package:login1/modules/login/search_setting.dart';
 import 'package:login1/modules/login/sign_in.dart';
 import 'package:login1/modules/login/sign_up_about.dart';
 import 'package:login1/modules/login/profile_main.dart';
+
+import '../modules/add_hobbies/add_hobbies.dart';
+import '../modules/add_hobbies/add_hobbies_surfing.dart';
+import '../modules/add_hobbies/add_new_hobby.dart';
+import '../modules/add_hobbies/add_newhobbies_nextstep.dart';
 
 class Router {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -60,6 +63,8 @@ class Router {
         return MaterialPageRoute(builder: (_) => const PrivacyPolicy());
       case '/Explore':
         return MaterialPageRoute(builder: (_) => const Explore());
+      case '/ExploreSetting':
+        return MaterialPageRoute(builder: (_) => const ExploreSetting());
 
       default:
         return MaterialPageRoute(

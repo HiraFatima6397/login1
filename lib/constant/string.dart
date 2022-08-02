@@ -87,5 +87,11 @@ class StringConstant{
   static const String addDescription = 'Add description';
   static const String effective = ' Effective: October 1, 2021 (View previous versions: 4/19/21, 6/12/20) Our Privacy Policy explains how Buddlee collects, uses, and discloses information about you. The terms “Buddlee,” “we,” “us,” and “our” include Buddlee LLC and our affiliates. We use the terms “member,” “you,” and “your” to mean any person using our Platform or attending related events, including any organization or person using the Platform on an organization’s behalf. This Privacy Policy applies to the processing of information about members and other individuals that we collect when you use our “Platform,” which means any website, application, or services we offer, or when you communicate with us. For information about choices you may have under this policy, please see “Your Choices” below. This Privacy Policy does not apply to the information that you may provide to third parties, such as members, and others with whom you may share information about yourself. sources... ';
   static const String buddee = 'Buddee';
+  static const String tom = 'Tom, 30';
+  static const String away = '3 km away';
+  static const String youGot3Hobbies = 'YOU GOT 3 Hobbies matches!';
+  static const String noSpecificNiche = 'No specific niche yet just looking to make some photography friends';
+  static const String tomOtherHobbies = 'Tom’s other hobbies';
+  static const String astronomyIsThe = 'Astronomy is the study of everything in the universe beyond Earths atmosphere. That includes objects like the Sun , the Moon , the planets, and the stars.';
 
 }

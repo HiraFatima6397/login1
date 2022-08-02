@@ -4,7 +4,6 @@ import 'package:login1/constant/icons.dart';
 import 'package:login1/constant/images.dart';
 import 'package:login1/constant/string.dart';
 import 'package:login1/constant/style.dart';
-import 'package:login1/modules/login/add_hobbies.dart';
 
 class SignInAbout extends StatefulWidget {
   const SignInAbout({Key? key}) : super(key: key);
