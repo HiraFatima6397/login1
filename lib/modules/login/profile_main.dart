@@ -72,41 +72,45 @@ class _ProfileState extends State<Profile> {
             Positioned(
               top: 310,
               left: 155,
-              child: Container(
-                height: 27,
-                width: 101,
-                child:
-                    Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                  const Icon(
-                    AppIcons.diamond,
-                    color: AppColors.white,
-                  ),
-                  const SizedBox(
-                    width: 5,
-                  ),
-                  Text(
-                    StringConstant.premium,
-                    style: AppStyles.regularText(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w400,
+              child: InkWell(onTap: (){
+                Navigator.of(context).pushNamed('/Premium');
+              },
+                child: Container(
+                  height: 27,
+                  width: 101,
+                  child:
+                      Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                    const Icon(
+                      AppIcons.diamond,
                       color: AppColors.white,
                     ),
+                    const SizedBox(
+                      width: 5,
+                    ),
+                    Text(
+                      StringConstant.premium,
+                      style: AppStyles.regularText(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w400,
+                        color: AppColors.white,
+                      ),
+                    ),
+                  ]),
+                  decoration: BoxDecoration(
+                    gradient: const LinearGradient(colors: [
+                      AppColors.createArtyClickOrange,
+                      AppColors.createAccountCantaloupe
+                    ], end: Alignment.topLeft, begin: Alignment.topRight),
+                    boxShadow: const [
+                      BoxShadow(
+                          color: AppColors.createAccountCantaloupe,
+                          blurRadius: 12,
+                          spreadRadius: 1,
+                          offset: Offset(1, 3))
+                    ],
+                    borderRadius: BorderRadius.circular(40),
+                    color: AppColors.createAccountCantaloupe,
                   ),
-                ]),
-                decoration: BoxDecoration(
-                  gradient: const LinearGradient(colors: [
-                    AppColors.createArtyClickOrange,
-                    AppColors.createAccountCantaloupe
-                  ], end: Alignment.topLeft, begin: Alignment.topRight),
-                  boxShadow: const [
-                    BoxShadow(
-                        color: AppColors.createAccountCantaloupe,
-                        blurRadius: 12,
-                        spreadRadius: 1,
-                        offset: Offset(1, 3))
-                  ],
-                  borderRadius: BorderRadius.circular(40),
-                  color: AppColors.createAccountCantaloupe,
                 ),
               ),
             ),

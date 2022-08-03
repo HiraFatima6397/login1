@@ -93,5 +93,21 @@ class StringConstant{
   static const String noSpecificNiche = 'No specific niche yet just looking to make some photography friends';
   static const String tomOtherHobbies = 'Tom’s other hobbies';
   static const String astronomyIsThe = 'Astronomy is the study of everything in the universe beyond Earths atmosphere. That includes objects like the Sun , the Moon , the planets, and the stars.';
+  static const String getPremium = 'Get premium';
+  static const String chooseYourPlan = 'Choose your plan';
+  static const String get = 'PREMIUM';
+  static const String s = '\$20';
+  static const String perMonth = 'PER MONTH';
+  static const String saveUpTo = 'Save Up to 30%';
+  static const String unlimitedLikes = 'Unlimited Likes';
+  static const String unlimitedHobbies = 'Unlimited hobbies listed';
+  static const String changeYourLocation = 'Change your location (view profiles in another city)';
+  static const String seeProfileThat = 'See profiles that have ‘liked’ you';
+  static const String seeIfYour = 'See if your messages have been read';
+  static const String choosePlan = 'Choose Plan';
+  static const String explore = 'Explore';
+  static const String congratulation = 'Congratulation';
+  static const String youAreNowAPremium = 'You are now a premium account holder';
+  static const String goToBuddee= 'Go To Buddee';
 
 }

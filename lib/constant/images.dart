@@ -19,7 +19,9 @@ class AppImages {
   static const explore = '$base/Screen Shot 2022-08-01 at 6.38.14 PM.png';
   static const direction = '$base/Vector (4).png';
   static const explore3 = '$base/Rectangle 2588 (1).png';
-
+  static const visa = '$base/visa.jpg';
+  static const slideButton = '$base/Screen Shot 2022-08-03 at 4.39.58 PM.png';
+  static const congratulation = '$base/Screen Shot 2022-08-03 at 5.54.39 PM.png';
 
 
 

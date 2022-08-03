@@ -25,6 +25,8 @@ class AppColors {
   static const Color dot= Color(0xFFD5F2F4);
   static const Color dot2= Color(0xFFAEAEAE);
   static const Color containerInner= Color(0xFFE7FBFF);
+  static const Color perMonth= Color(0xFF1D396B);
+  static const Color backGround2= Color(0xFFE5E5E5);
 
 
 }

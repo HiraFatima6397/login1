@@ -1,17 +1,19 @@
  import 'package:flutter/material.dart';
 import 'package:login1/modules/add_hobbies/add_hobbies3.dart';
+import 'package:login1/modules/login/Bottom_sheet.dart';
 import 'package:login1/modules/login/add_photos.dart';
 import 'package:login1/modules/add_hobbies/app_hobbies2.dart';
+import 'package:login1/modules/login/congratulation.dart';
 import 'package:login1/modules/login/edit_hobbies.dart';
 import 'package:login1/modules/login/explore.dart';
 import 'package:login1/modules/login/explore_setting.dart';
+import 'package:login1/modules/login/get_premium.dart';
 import 'package:login1/modules/login/information.dart';
 import 'package:login1/modules/login/log_out.dart';
 import 'package:login1/modules/login/mainphoto_deletephoto.dart';
 import 'package:login1/modules/login/on_boarding.dart';
 import 'package:login1/modules/login/privacy_policy.dart';
 import 'package:login1/modules/login/save_hobbies.dart';
-import 'package:login1/modules/login/screen.dart';
 import 'package:login1/modules/login/search_setting.dart';
 import 'package:login1/modules/login/sign_in.dart';
 import 'package:login1/modules/login/sign_up_about.dart';
@@ -65,7 +67,12 @@ class Router {
         return MaterialPageRoute(builder: (_) => const Explore());
       case '/ExploreSetting':
         return MaterialPageRoute(builder: (_) => const ExploreSetting());
-
+      case '/Premium':
+        return MaterialPageRoute(builder: (_) => const Premium());
+      case '/Bottom':
+        return MaterialPageRoute(builder: (_) => const Bottom());
+      case '/Congratulation':
+        return MaterialPageRoute(builder: (_) => const Congratulation());
       default:
         return MaterialPageRoute(
             builder: (_) =>
