@@ -11,7 +11,6 @@ import 'package:login1/modules/login/mainphoto_deletephoto.dart';
 import 'package:login1/modules/login/on_boarding.dart';
 import 'package:login1/modules/login/privacy_policy.dart';
 import 'package:login1/modules/login/save_hobbies.dart';
-import 'package:login1/modules/login/screen.dart';
 import 'package:login1/modules/login/search_setting.dart';
 import 'package:login1/modules/login/sign_in.dart';
 import 'package:login1/modules/login/sign_up_about.dart';

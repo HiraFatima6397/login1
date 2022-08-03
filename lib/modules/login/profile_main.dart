@@ -163,6 +163,7 @@ class _ProfileState extends State<Profile> {
                 ),
               ),
               const SizedBox(
+
                 width: 130,
               ),
               const SizedBox(
